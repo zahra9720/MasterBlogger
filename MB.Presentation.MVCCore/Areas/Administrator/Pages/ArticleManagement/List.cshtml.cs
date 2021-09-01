@@ -16,5 +16,6 @@ namespace MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleManagement
         {
             Articles = _articleApplication.GetList();
         }
+
     }
 }
