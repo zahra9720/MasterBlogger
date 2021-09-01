@@ -87,3 +87,4 @@ D:\ASP.NetCore5\Projects\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net5.0\
 D:\ASP.NetCore5\Projects\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net5.0\MB.Infrastructure.EFCore.pdb
 D:\ASP.NetCore5\Projects\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\ArticleCategoryManagement\Create.cshtml.g.cs
 D:\ASP.NetCore5\Projects\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\ArticleCategoryManagement\Edit.cshtml.g.cs
+D:\ASP.NetCore5\Projects\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net5.0\Razor\Areas\Administrator\Pages\ArticleManagement\List.cshtml.g.cs
