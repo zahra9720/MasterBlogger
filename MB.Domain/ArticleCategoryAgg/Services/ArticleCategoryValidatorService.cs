@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MB.Domain.ArticleCategoryAgg.Exceptions;
+using System;
 
 namespace MB.Domain.ArticleCategoryAgg.Services
 {
@@ -13,7 +14,7 @@ namespace MB.Domain.ArticleCategoryAgg.Services
         {
             if (_articleCategoryRepository.Exists(title))
             {
-                throw new DuplicateWaitObjectException("This Record already exists in database");
+                throw new DuplicatedRecoredException("This Record already exists in database");
             }
         }
     }
