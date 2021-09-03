@@ -1,4 +1,5 @@
-﻿using MB.Infrastructure.EFCore;
+﻿using MB.Domain.CommentAgg;
+using MB.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Globalization;
@@ -16,7 +17,9 @@ namespace MB.Infrastructure.Query
 
         public ArticleQueryView GetArticle(long id)
         {
-            return _context.Articles.Include(x => x.ArticleCategory).Select(x => new ArticleQueryView
+            return _context.Articles
+                .Include(x => x.ArticleCategory)
+                .Select(x => new ArticleQueryView
             {
                 Id = x.Id,
                 Title = x.Title,
@@ -24,21 +27,40 @@ namespace MB.Infrastructure.Query
                 ArticleCategory = x.ArticleCategory.Title,
                 Image = x.Image,
                 Content=x.Content,
-                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture)
-            }).FirstOrDefault(x => x.Id == id);
+                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
+                CommentsCount = x.Comments.Count(z => z.Status == Statuses.Confirmed),
+                Comments=MapComment(x.Comments.Where(z=>z.Status==Statuses.Confirmed))
+                }).FirstOrDefault(x => x.Id == id);
         }
-
+        private static List<CommentQueryView> MapComment(IEnumerable<Comment> comments)
+        {
+            var result = new List<CommentQueryView>();
+            foreach (var comment in comments)
+            {
+                result.Add(new CommentQueryView
+                {
+                    Name = comment.Name,
+                    CreationDate = comment.CreationDate.ToString(CultureInfo.InvariantCulture),
+                    Message = comment.Message
+                });
+            }
+            return result;
+        }
         public List<ArticleQueryView> GetArticles()
         {
-            return _context.Articles.Include(x => x.ArticleCategory).Select(x => new ArticleQueryView
-            {
-                Id = x.Id,
-                Title = x.Title,
-                ShortDescription = x.ShortDescription,
-                ArticleCategory = x.ArticleCategory.Title,
-                Image=x.Image,
-                CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture)
-            }).ToList();
+            return _context.Articles
+                .Include(x => x.Comments)
+                .Include(x => x.ArticleCategory)
+                .Select(x => new ArticleQueryView
+                {
+                    Id = x.Id,
+                    Title = x.Title,
+                    ShortDescription = x.ShortDescription,
+                    ArticleCategory = x.ArticleCategory.Title,
+                    Image = x.Image,
+                    CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
+                    CommentsCount = x.Comments.Count(z => z.Status == Statuses.Confirmed)
+                }).ToList();
         }
     }
 }
