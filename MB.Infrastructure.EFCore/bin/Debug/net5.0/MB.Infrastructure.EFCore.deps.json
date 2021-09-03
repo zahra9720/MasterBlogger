@@ -1069,6 +1069,14 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "01-Framework/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.9"
+        },
+        "runtime": {
+          "01-Framework.dll": {}
+        }
+      },
       "MB.Application.Contracts/1.0.0": {
         "runtime": {
           "MB.Application.Contracts.dll": {}
@@ -1076,6 +1084,7 @@
       },
       "MB.Domain/1.0.0": {
         "dependencies": {
+          "01-Framework": "1.0.0",
           "MB.Application.Contracts": "1.0.0"
         },
         "runtime": {
@@ -1768,6 +1777,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "01-Framework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MB.Application.Contracts/1.0.0": {
       "type": "project",

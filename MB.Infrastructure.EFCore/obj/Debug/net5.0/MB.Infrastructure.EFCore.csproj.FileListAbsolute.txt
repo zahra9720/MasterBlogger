@@ -18,3 +18,5 @@ D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net5.0
 D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.EFCore\obj\Debug\net5.0\MB.Infrastructure.EFCore.genruntimeconfig.cache
 D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\net5.0\MB.Application.Contracts.dll
 D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\net5.0\MB.Application.Contracts.pdb
+D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\net5.0\01-Framework.dll
+D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.EFCore\bin\Debug\net5.0\01-Framework.pdb

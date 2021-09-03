@@ -1,0 +1,12 @@
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\bin\Debug\net5.0\01-Framework.deps.json
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\bin\Debug\net5.0\01-Framework.dll
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\bin\Debug\net5.0\ref\01-Framework.dll
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\bin\Debug\net5.0\01-Framework.pdb
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\obj\Debug\net5.0\01-Framework.csproj.AssemblyReference.cache
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\obj\Debug\net5.0\01-Framework.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\obj\Debug\net5.0\01-Framework.AssemblyInfoInputs.cache
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\obj\Debug\net5.0\01-Framework.AssemblyInfo.cs
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\obj\Debug\net5.0\01-Framework.csproj.CoreCompileInputs.cache
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\obj\Debug\net5.0\01-Framework.dll
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\obj\Debug\net5.0\ref\01-Framework.dll
+D:\ASP.NetCore5\Projects\MasterBlogger\01-Framework\obj\Debug\net5.0\01-Framework.pdb

@@ -21,3 +21,5 @@ D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.Core\obj\Debug\net5.0\r
 D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.Core\obj\Debug\net5.0\MB.Infrastructure.Core.pdb
 D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.Core\bin\Debug\net5.0\MB.Infrastructure.Query.dll
 D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.Core\bin\Debug\net5.0\MB.Infrastructure.Query.pdb
+D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.Core\bin\Debug\net5.0\01-Framework.dll
+D:\ASP.NetCore5\Projects\MasterBlogger\MB.Infrastructure.Core\bin\Debug\net5.0\01-Framework.pdb

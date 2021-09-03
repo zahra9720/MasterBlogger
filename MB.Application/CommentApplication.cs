@@ -15,21 +15,21 @@ namespace MB.Application
         public void Add(AddComment command)
         {
             var commnet = new Comment(command.Name, command.Email, command.Message, command.ArticleId);
-            _commentRepository.CreateAndSave(commnet);
+            _commentRepository.Create(commnet);
         }
 
         public void Cancel(long id)
         {
             var commnet = _commentRepository.Get(id);
             commnet.Cancel();
-            _commentRepository.Save();
+            //_commentRepository.Save();
         }
 
         public void Confirm(long id)
         {
             var comment = _commentRepository.Get(id);
             comment.Confirm();
-            _commentRepository.Save();
+            //_commentRepository.Save();
         }
 
         public List<CommnetViewModel> GetList()
